@@ -51,22 +51,22 @@ def my_function(nume, prenume, *args, **kwargs):
 my_function('popescu', 'ana', 'are', '2', 'mere', job='developer', age=22)
 
 
-# while True:
-#     my_var = input('Introduceti un nr: ')
-#     try:
-#         my_int = int(my_var)
-#         print(my_var)
-#         print(my_ints)
-#         s = my_int + c
-#     except ValueError as e:
-#         print('Please enter a numeric value')
-#     except NameError:
-#         print('You have used an undefined var')
-#         pass
-#     else:
-#         print('No exception occurred')
-#     finally:
-#         print('We will print this if there\'s an exception or not')
+while True:
+    my_var = input('Introduceti un nr: ')
+    try:
+        my_int = int(my_var)
+        # print(my_var)
+        # print(my_ints)
+        # s = my_int + c
+    except ValueError as e:
+        print('Please enter a numeric value')
+    except NameError:
+        print('You have used an undefined var')
+        pass
+    else:
+        print('No exception occurred')
+    finally:
+        print('We will print this if there\'s an exception or not')
 
 print(dir(__builtins__))
 
